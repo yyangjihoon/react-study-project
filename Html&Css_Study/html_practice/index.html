@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Html_Practice</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form action="result.html" method="get">
+        <h1>모같코 지원서</h1>
+        <h3>(*모든 입력란은 필수입력입니다.)</h4>
+        
+        <h4>현재 하시고 있는 일은 무엇인가요?</h5>
+        <input type="radio" name="job" value="student" checked="checked" />대학생(재학생, 휴학생) <br />
+        <input type="radio" name="job" value="office" />직장인 <br />
+        <input type="radio" name="job" value="seeker" />취업준비생 <br />
+        <input type="radio" name="job" value="other" />기타 <br />
+
+        <h4>간단하게 자기소개 적어주세요^^ (*최대 10자)</h4>
+        <h5>(이름, 성별, 취미 등)</h5>
+        <input type="text" name="introduce" style="width:200px;" maxlength="10" autocomplete="off" required />
+
+        <h4>나이가 어떻게 될까요? (*숫자만 가능하게, 입력하지 않았을때 희미하게 글자나오기)</h4>
+        <h5>예)20</h5>
+        <input type="number" name="age" style="width:150px;" autocomplete="off" placeholder="입력하세요." required />
+
+        <h4>사는 곳이 어떻게 될까요?</h4>
+        <h5>(근처 지하철역 또는 OO구 OO동 이라고 적어주시면 됩니다)</h5>
+        <input type="text" name="address" style="width:200px;" maxlength="10" autocomplete="off" required />
+
+        <h4>연락처</h4>
+        <h5>예)01011112222</h5>
+        <input type="text" name="phone" style="width:200px;" autocomplete="off" required />
+
+        <h4>이메일</h4>
+        <h5>예)aaa@naver.com *이메일 형식으로만 입력가능</h5>
+        <input type="email" name="mail" style="width:200px;" autocomplete="off" required />
+
+        <h4>하고싶은 말</h4>
+        <textarea rows="10" cols="40" required></textarea>
+        <hr />
+        <input type="submit" value="지원서 제출" />
+    </form>
+</body>
+</html>
