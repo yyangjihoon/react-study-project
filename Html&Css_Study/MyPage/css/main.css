@@ -2,38 +2,105 @@ body {
     margin: 0;
     padding: 0;
 }
+@-webkit-keyframes blink {
+    0% {background-color: pink;}
+    33% {background-color: yellow;}
+    66% {background-color: ivory;}
+    100% {background-color: violet;}
+}
 .header {
     background: white;
     border-bottom: 1px solid lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-animation: blink 4.0s linear infinite;
+    position: fixed;
+    width:100%;
 }
 .container {
     margin: auto;
-    width: 800px;
+    width: 400px;
 }
 .container-middle {
-    padding: 30px 0;
+    padding: 10px 0;
 }
 .logo {
     float: left;
     margin-right: 10px;
+    max-width: 100%;
+    height: auto;
 }
 .logo img {
     display: block;
 }
 .menu {
     float: left;
-    font-size: 20px;
+    font-size: 25px;
 }
 .menu-item {
     float: left;
-    padding: 8px 20px;
-}
-.menu-item-2 {
-    float: left;
-    padding: 8px 200px;
+    padding: 8px 30px;
 }
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
+}
+
+.intro {
+    background-image: url("/img/home_logo.jpg");
+    border-bottom: 1px solid lightgray;
+    width:1920px;
+    height:1080px;
+}
+.home {
+    font-size: 80px;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 120px;
+    
+}
+@keyframes animated {
+    from {
+        margin-left: 100%;
+        width: auto;
+    }
+
+    to {
+        margin-left: 0%;
+        width: auto;
+    }
+}
+.section {
+    background: white;
+    border-bottom: 1px solid lightgray;
+    animation-duration: 2s;
+    animation-name: animated;
+}
+.contents {
+    margin: auto;
+    width: 1500px;
+    height: 1080px;
+}
+.contents-middle {
+    padding: 200px 0;
+}
+.myimg {
+    float: left;
+    max-width: 100%;
+    height: auto;
+    padding: 200px 0;
+}
+.list {
+    float: left;
+    padding: 50px 20px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5em;
+}
+.footer {
+    text-align: center;
+    font-size: 30px;
+    height: 50px;
 }

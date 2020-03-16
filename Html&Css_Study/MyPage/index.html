@@ -6,19 +6,69 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <!--상단 뼈대 구성-->
     <div class="header">
         <div class="container">
-            <!--상단 뼈대 구성-->
             <div class="container-middle clearfix">
                 <div class="logo">
-                    <img src="" alt="이미지 없음">
+                    <img src="./img/header_logo.png" alt="이미지 없음">
                 </div>
                 <div class="menu clearfix">
-                    <div class="menu-item">Home</div>
-                    <div class="menu-item">Introduce</div>
-                    <div class="menu-item-2">SNS</div>
+                    <div class="menu-item"><a href="#tab_intro">Home</a></div>
+                    <div class="menu-item"><a href="#tab_section">Introduce</a></div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!--홈-->
+    <div class="intro" id="tab_intro">
+        <div class="home">
+            <h3 class="aa">My Simple Page</h3>
+        </div>
+    </div>
+
+    <!--본문-->
+    <div class="section" id="tab_section">
+        <div class="contents">
+            <div class="contents-middle">
+                <div class="myimg">
+                    <img src="./img/my_img.png" alt="이미지 없음">
+                </div>
+                <div class="list">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4>Me...</h4>
+                                    <ul>
+                                        <li>이름 : Yang-JiHoon</li>
+                                        <li>생년월일 : 1996.02.02</li>
+                                        <li>거주지 : 경기도</li>
+                                        <li>취미 : 재준이와 함께 하는 리그오브레전드</li>
+                                        <li>목표1 : html, css, javascript 학습</li>
+                                        <li>목표2 : react 학습</li>
+                                        <li>목표2-1 : react-native 학습</li>
+                                        <li>목표2-2 : 모같코 프로젝트 참여</li>
+                                        <li>목표3 : react로 MyPage 테마 설정하여 재구축</li>
+                                        <li>목표3-1 : react로 구축한 MyPage 리팩토링하며 포트폴리오 사이트 제작</li>
+                                    </ul>
+                                    <h4>간단하지만 정신사나운 html, css 기초 연습..</h4>
+                                </td>
+                            </tr>
+                        </tbody> 
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--마무리..?-->
+    <div class="footer">
+        Thank you
+        <div class="sns_link">
+           <a href="mailto:yang9105@gmail.com">#E-mail</a>
+           <a href="https://www.facebook.com/profile.php?id=100004469945877" target="_blank">#Facebook</a>
         </div>
     </div>
 </body>
